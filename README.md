@@ -3,16 +3,20 @@
 > Good intentions, shaky hands. STP does not know what he is doing. We test, we write down what we think we saw, and that is the whole product. A number here is not the truth. A chart is not the truth. Any other sentence that sounds sure of itself is not the truth either. Do not count any of it as a claim.
 >
 > [Disclaimer](DISCLAIMER.md)
+>
+> **Part of [tn-master](https://github.com/STP-KAS/tn-master)**, the map of every TN10 storm. Renamed on 11 Oct 2026 from `tn10-build-desk-tps`; old links redirect here.
+>
+> ← previous storm: [tn10-storm-2026-10-04-questions](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions) | next storm: [tn10-storm-2026-10-07](https://github.com/STP-KAS/tn10-storm-2026-10-07) →
 
 # Grok Build on TN10: throughput and monitoring
 
 Grok Build only. This is the desk, sending through public Testnet-10 nodes. It is not the Grok bot, and it is not the box node n0.
 
-The bot's own effort, and the joint report after the 9 or 13 Oct run, stay in [STP-KAS/tn10-storm-throughput-questions](https://github.com/STP-KAS/tn10-storm-throughput-questions). This repo is the desk's findings: how fast it could submit, what the five Kaspa Pulse questions looked like on a monitored hold, and how the public API relates to Kaspa.stream.
+The bot's own effort, and the joint report after the 9 or 13 Oct run, stay in [STP-KAS/tn10-storm-2026-10-04-questions](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions). This repo is the desk's findings: how fast it could submit, what the five Kaspa Pulse questions looked like on a monitored hold, and how the public API relates to Kaspa.stream.
 
 Kaspa Testnet-10 only. Times below are UTC unless they say CEST. No transaction ids are in this repo.
 
-The other notes stay separate. The 9 or 13 Oct paste-in is [GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-throughput-questions/blob/main/plan/GROK-BUILD-PROMPT.md). The questions, the method, and the empty result sections are [tn10-storm-throughput-questions](https://github.com/STP-KAS/tn10-storm-throughput-questions). The 7 Oct included-rate tries are [tn10-build-desk-tps-3500](https://github.com/STP-KAS/tn10-build-desk-tps-3500). Why a signed payment stops near 3,080 is [what-limits-tx-rate](https://github.com/STP-KAS/what-limits-tx-rate).
+The other notes stay separate. The 9 or 13 Oct paste-in is [GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions/blob/main/plan/GROK-BUILD-PROMPT.md). The questions, the method, and the empty result sections are [tn10-storm-2026-10-04-questions](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions). The 7 Oct included-rate tries are [tn10-storm-2026-10-07](https://github.com/STP-KAS/tn10-storm-2026-10-07). Why a signed payment stops near 3,080 is [what-limits-tx-rate](https://github.com/STP-KAS/what-limits-tx-rate).
 
 Runs on this page, oldest first:
 
@@ -205,7 +209,7 @@ Why. The six-hour hold included 2,207 plain one-input one-output transfers per s
 
 The mempool count stayed high through this. At 2026-10-07T06:11:31Z the highest public mempool was 52,530. At 2026-10-07T06:27:46Z it was 49,141, still falling by only a few per second. A vector-10 fee read at 2026-10-07T06:28Z was about 162 and 131 sompi per gram in the normal buckets, and about 243 in the priority bucket. During the hold the normal quote was about 186–194 and the priority quote was about 876. The 06:09Z slice was about 1.5 user transactions per block while that count was still near 50,900. The count is the wrong instrument for "is the next block full."
 
-This is TN10. The mainnet hour the same night is in the section below. That reading is 22:41 UTC on 6 Oct, during the depth-8 window, and it stays at the end because it is not a TN10 run. The builder view is point 9 of the [early recommendations](https://github.com/STP-KAS/tn10-storm-throughput-questions#early-recommendations-for-builders).
+This is TN10. The mainnet hour the same night is in the section below. That reading is 22:41 UTC on 6 Oct, during the depth-8 window, and it stays at the end because it is not a TN10 run. The builder view is point 9 of the [early recommendations](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions#early-recommendations-for-builders).
 
 ### Fee 400, the window is closed
 
@@ -225,11 +229,11 @@ At 2026-10-07T08:07Z the desk node recorded about 305 transactions per block and
 
 ## Saved for the 9 Oct test
 
-The shape that held is in [plan/DESK-SHAPE-9-OCT.md](https://github.com/STP-KAS/tn10-storm-throughput-questions/blob/main/plan/DESK-SHAPE-9-OCT.md). The test-day steps are in [plan/TESTDAY.md](https://github.com/STP-KAS/tn10-storm-throughput-questions/blob/main/plan/TESTDAY.md). The paste-in prompt is [plan/GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-throughput-questions/blob/main/plan/GROK-BUILD-PROMPT.md). Starting that prompt on test day is the run. Paced steps stay at 4 processes, depth 2, in-flight 48. The long hold and the uncapped max step use two signers on each public node, depth 2, in-flight 64, and a fee frozen at 200 and 300, plus the synced desk node on that long hold and on the uncapped max. The fee cap stays 600. When the storm GO is given, the run takes 2 hours 55 minutes from T0. The plan puts T0 at about 18:15 UTC and the last baseline at about 21:10 UTC. The same clock is 13 Oct if 9 Oct is not ready. Earliest start is 18:00 UTC. That note does not start the storm.
+The shape that held is in [plan/DESK-SHAPE-9-OCT.md](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions/blob/main/plan/DESK-SHAPE-9-OCT.md). The test-day steps are in [plan/TESTDAY.md](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions/blob/main/plan/TESTDAY.md). The paste-in prompt is [plan/GROK-BUILD-PROMPT.md](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions/blob/main/plan/GROK-BUILD-PROMPT.md). Starting that prompt on test day is the run. Paced steps stay at 4 processes, depth 2, in-flight 48. The long hold and the uncapped max step use two signers on each public node, depth 2, in-flight 64, and a fee frozen at 200 and 300, plus the synced desk node on that long hold and on the uncapped max. The fee cap stays 600. When the storm GO is given, the run takes 2 hours 55 minutes from T0. The plan puts T0 at about 18:15 UTC and the last baseline at about 21:10 UTC. The same clock is 13 Oct if 9 Oct is not ready. Earliest start is 18:00 UTC. That note does not start the storm.
 
 ## Tasks for stp, from this desk
 
-These are the tasks in [tn10-storm-throughput-questions](https://github.com/STP-KAS/tn10-storm-throughput-questions#tasks-for-stp-before-the-storm). Scored at the stop, 2026-10-07T05:55:18Z. The storm itself is still the later GO. This pre-run does not start it.
+These are the tasks in [tn10-storm-2026-10-04-questions](https://github.com/STP-KAS/tn10-storm-2026-10-04-questions#tasks-for-stp-before-the-storm). Scored at the stop, 2026-10-07T05:55:18Z. The storm itself is still the later GO. This pre-run does not start it.
 
 1. **Dry run.** Done on the desk for the planned share. Four fixed processes held 734 tx/s, 97.9% of 750, over 3 minutes, with 0 rejects and 0 seconds at 0. The lower steps of 25, 100, 225 and 475 tx/s each hit the target on every second. The per-transaction logs for that run are on the desk. Matching those txids to n0 is the box's check, and that match is still open.
 2. **Enough tKAS.** OK for both wallets. [Grok Build](https://github.com/STP-KAS/groks-wallet#grok-build) ([TN10 page](https://tn10.kaspa.stream/addresses/kaspatest:qp4jge54eztxewf8r53rtjdvxakmatsu6tjd0nn9sjhgvzxknsfvjvmwurqhd)) and [Grok Bot](https://github.com/STP-KAS/groks-wallet#grok-bot) ([TN10 page](https://tn10.kaspa.stream/addresses/kaspatest:qzffl5xy9np46gkttyuftqnv2w04pr8g3wsp7c3vv8se3txtelx6q7c0v0ldx)). At 23:00 UTC the desk read the Build wallet at 3,612,867 tKAS and 15,944 coins of at least 2 tKAS. The Bot wallet is OK on stp's word. The box balance was not read from this desk.
